@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Acadêmico - Clothes4Happiness</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        h1, h2, h3 { color: #1a365d; }
+        h1 { text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 10px; }
+        .capa { text-align: center; margin-bottom: 50px; }
+        .secao { margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f7fafc; }
+    </style>
+</head>
+<body>
+
+    <div class="capa">
+        <h1>PROJETO DE TRANSFORMAÇÃO DIGITAL E DEVOPS</h1>
+        <h2>Clothes4Happiness</h2>
+        <p><strong>Disciplina:</strong> Desenvolvimento de Sistemas</p>
+        <p><strong>Projeto:</strong> Infraestrutura, Containers e Integração Contínua (CI/CD)</p>
+    </div>
+
+    <div class="secao">
+        <h2>1. Diagnóstico do Cenário Atual</h2>
+        <p>A Clothes4Happiness enfrentava gargalos operacionais devido a processos manuais e falta de padronização nos ambientes de desenvolvimento e produção. A ausência de automação gerava falhas frequentes durante a implantação de novas funcionalidades.</p>
+    </div>
+
+    <div class="secao">
+        <h2>2. Estratégia de Sistemas: ERP e CRM</h2>
+        <p>Para otimizar a gestão e o relacionamento com parceiros e doadores, recomenda-se a integração de soluções ERP (para gestão de estoque têxtil e logística) e CRM (para mapeamento de doadores e campanhas engajadas).</p>
+    </div>
+
+    <div class="secao">
+        <h2>3. Arquitetura: Nuvem vs. Local</h2>
+        <table>
+            <tr>
+                <th>Critério</th>
+                <th>Infraestrutura Local (On-Premises)</th>
+                <th>Nuvem (Cloud) - Recomendada</th>
+            </tr>
+            <tr>
+                <td>Custo Inicial</td>
+                <td>Alto (servidores e equipamentos)</td>
+                <td>Baixo (pagamento por uso)</td>
+            </tr>
+            <tr>
+                <td>Escalabilidade</td>
+                <td>Lenta e dispendiosa</td>
+                <td>Imediata e flexível</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="secao">
+        <h2>4. Conteinerização com Docker</h2>
+        <p>A adoção do Docker garante a padronização do ambiente. A aplicação rodou isolada no container sob a porta 8000, eliminando o problema de "funciona na minha máquina".</p>
+    </div>
+
+    <div class="secao">
+        <h2>5. Esteira de Integração Contínua (CI/CD)</h2>
+        <p>Através do GitHub Actions com a especificação descrita em <code>.github/workflows/deploy.yml</code>, os testes e compilação do container são executados automaticamente a cada mudança enviada para a branch principal (<code>main</code>), garantindo qualidade contínua.</p>
+    </div>
+
+</body>
+</html>
